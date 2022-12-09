@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var employees = [
+        { e_id: 111, e_name: "e_one", e_sal: 10000, e_department: "dev" },
+        { e_id: 222, e_name: "e_two", e_sal: 20000, e_department: "product" },
+        { e_id: 333, e_name: "e_three", e_sal: 30000, e_department: "testing" },
+        { e_id: 444, e_name: "e_four", e_sal: 40000, e_department: "deploy" },
+        { e_id: 555, e_name: "e_five", e_sal: 50000, e_department: "HR" },
+      ];
+
+      document.write(`<table border = "1"
+                             align= "center"
+                             cellspacing = "10px"
+                             cellpadding = "10px">
+                             <tr>
+                              <th>e_id</th>
+                              <th>e_name</th>
+                              <th>e_salary</th>
+                              <th>e_department</th>
+                              </tr>`);
+
+      employees.forEach(function (element, index) {
+        document.write(`<tr>
+                                  <td>${element.e_id}</td>
+                                  <td>${element.e_name}</td>
+                                  <td>${element.e_sal}</td>
+                                  <td>${element.e_department}</td>
+                                  </tr>`);
+      });
+      document.write(`</table>`);
+    </script>
+  </body>
+</html>

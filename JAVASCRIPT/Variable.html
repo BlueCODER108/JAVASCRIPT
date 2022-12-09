@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //STRING
+      var sub = `ReactJS`;
+      var msg = `Welcome to ${sub}`;
+
+      document.write(msg);
+      document.write(`<br>`);
+
+      //NUMBER
+      var decimal = 100;
+      var binary = 0b1010;
+      var octal = 0o00;
+      var hexadecimal = 0x2938c;
+
+      document.write(
+        decimal,
+        "<br>",
+        binary,
+        "<br>",
+        octal,
+        "<br>",
+        hexadecimal,
+        "<br>"
+      );
+      //BOOLEAN
+      var flag = true;
+      var flag1 = false;
+      document.write(flag, "<br>", flag1);
+
+      //UNDEFINED
+      var x;
+      document.write(`<br>`);
+      document.write(x);
+
+      //NULL
+      x = null;
+      document.write(`<br>`);
+      document.write(x);
+
+      //BIGINT
+      var large = 7328972498720198709328794879218798;
+      17987938479843439287n;
+      document.write("<br>");
+      document.write(large);
+      document.write(`<br>`);
+
+      //SYMBOL
+      var r101 = Symbol(100);
+      var r102 = Symbol(100);
+      console.log(r101);
+      console.log(r102);
+    </script>
+  </body>
+</html>

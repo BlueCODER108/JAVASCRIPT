@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //for loop
+
+      let some = "FOR LOOP";
+      document.write(some);
+
+      var arr1 = [10, 20, 30, 40, 50];
+      for (var i = 0; i < arr1.length; i++) {
+        document.write(arr1[i], "<br>");
+      }
+
+      var arr2 = ["Angular15", "ReactJS", "VueJS", "NodeJS", "MongoDB"];
+      for (var i = 0; i < arr2.length; i++) {
+        document.write(arr2[i], "<br>");
+      }
+
+      //for Each Loop
+      var arr3 = [100, 200, 300, 400, 500];
+      arr3.forEach(function (element, index) {
+        document.write(element, "<br>");
+      });
+
+      var arr4 = ["Hello", "Welcome", "ReactJS", "Sathya", "Angular"];
+      arr4.forEach(function (element, index) {
+        document.write(element, "<br>");
+      });
+
+      //for of Loop
+      var arr5 = [100, 200, 300, 400, 500];
+      for (var a of arr5) {
+        document.write(a, "<br>");
+      }
+
+      var arr6 = ["Hello_1", "Hello_2", "Hello_3", "Hello_4", "Hello_5"];
+      for (var jars of arr6) {
+        document.write(jars, "<br>");
+      }
+
+      //exp
+
+      var my_arr = [100, "hello", true, 100n, undefined, null];
+      for (var i = 0; i < my_arr.length; i++) {
+        document.write(my_arr[i], "<br>");
+      }
+    </script>
+  </body>
+</html>
