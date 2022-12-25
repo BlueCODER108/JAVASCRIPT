@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>LOGIN</legend>
+      <table>
+        <tr>
+          <td>User Name</td>
+          <td>
+            <input type="text" id="box1" placeholder="Enter the UserName" />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" id="box2" placeholder="Enter the Password" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="login()">Login</button>
+          </td>
+        </tr>
+      </table>
+      <h1 id="res"></h1>
+      <script>
+        function login() {
+          let x = document.getElementById("box1").value;
+          let y = document.getElementById("box2").value;
+
+          if (x == "admin" && y == "admin") {
+            document.getElementById("res").innerHTML = "login Sucess";
+          } else {
+            document.getElementById("res").innerHTML = "login Fail";
+          }
+        }
+      </script>
+    </fieldset>
+  </body>
+</html>
